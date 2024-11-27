@@ -1,0 +1,44 @@
+PID100110
+Nipa Khatun
+01565
+Female
+10
+Dhaka
+Dr. Anique
+G-304
+Fever
+1000
+
+PID100114
+Rahim
+0144796
+Male
+25
+Badda
+Dr. Anique
+G-304
+Cold
+1000
+
+PID10013
+Rifat
+01457
+Male
+25
+Kuratoli
+Dr. Kazi
+G-304
+Fever
+1000
+
+PID100141
+Lina
+014
+Female
+15
+aiub
+Dr. Alfaz
+G-305
+cold
+200000
+
