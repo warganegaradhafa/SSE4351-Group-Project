@@ -1,0 +1,2 @@
+# SSE4351-Group-Project
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2f21a22af21646b9b24da2aef0b5102a)](https://app.codacy.com/gh/warganegaradhafa/SSE4351-Group-Project?utm_source=github.com&utm_medium=referral&utm_content=warganegaradhafa/SSE4351-Group-Project&utm_campaign=Badge_Grade)
