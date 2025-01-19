@@ -9,7 +9,19 @@ public class Patient extends Person {
 	private String deposit;
 
     
-    public Patient( String id, String name, String mobileNo, String gender, String age, String address, String appointedDoctor, String room, String diagnosis,String deposit) {
+    public Patient( 
+    private String id;
+    private String name;
+    private String mobileNo;
+    private String gender;
+    private String age;
+    private String address;
+    private String appointedDoctor;
+    private String room;
+    private String diagnosis;
+    private String deposit;
+
+    ) {
         super(id,name,mobileNo,gender);
 		
 		this.age = age;

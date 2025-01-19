@@ -7,13 +7,33 @@ import java.awt.event.*;
 import Classes.*;
 
 public class AddPatient extends JFrame implements MouseListener, ActionListener{
-	JLabel  hosLabel, pafLabel,pIdLabel,idFieldLabel, pnLabel, mbLabel, genLabel, ageLabel, addLabel, refLabel, appLabel, roomLabel, disLabel, depLabel, imgLabel;
+	JLabel  hosLabel;
+	JLabel	pafLabel;
+	JLabel	pIdLabel;
+	JLabel	idFieldLabel;
+	JLabel	pnLabel;
+	JLabel	mbLabel;
+	JLabel	genLabel;
+	JLabel	ageLabel;
+	JLabel	addLabel;
+	JLabel	refLabel;
+	JLabel	appLabel;
+	JLabel	roomLabel;
+	JLabel	disLabel;
+	JLabel	depLabel;
+	JLabel	imgLabel;
+	
 	JTextField pIdTF, pnTF, mbTF, addTF, refTF, ageTF, disTF, depTF;
-	JRadioButton a1, a2, a3;
+	JRadioButton a1;
+	JRadioButton a2;
+	JRadioButton a3;
 	JButton addBtn, bckBtn;
 	ButtonGroup gBtn;
-	JComboBox b1, b2;
-	Color c1,c2,c3;
+	JComboBox b1;
+	JComboBox b2;
+	Color c1;
+	Color c2;
+	Color c3;
 	ImageIcon img, icon;
 	Font f1, f2;
 	JPanel panel;
