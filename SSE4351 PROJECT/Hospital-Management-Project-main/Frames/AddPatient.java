@@ -23,15 +23,6 @@ public class AddPatient extends JFrame implements MouseListener, ActionListener{
 	JLabel	depLabel;
 	JLabel	imgLabel;
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	JTextField pIdTF, pnTF, mbTF, addTF, refTF, ageTF, disTF, depTF;
 	JRadioButton a1;
 	JRadioButton a2;
