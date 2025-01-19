@@ -29,8 +29,11 @@ public class AddPatient extends JFrame implements MouseListener, ActionListener{
 	JRadioButton a3;
 	JButton addBtn, bckBtn;
 	ButtonGroup gBtn;
-	JComboBox b1, b2;
-	Color c1,c2,c3;
+	JComboBox b1;
+	JComboBox b2;
+	Color c1;
+	Color c2;
+	Color c3;
 	ImageIcon img, icon;
 	Font f1, f2;
 	JPanel panel;
