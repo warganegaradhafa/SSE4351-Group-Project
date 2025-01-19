@@ -18,7 +18,10 @@ public class AddDoctor extends JFrame implements MouseListener,ActionListener{
 	JRadioButton r1,r2,r3;
 	JComboBox dept;
 	Color color1,color2;
-	Font font1, font2, font3, font4;
+	Font font1;
+	Font font2; 
+	Font font3; 
+	Font font4;
 	ImageIcon img;
 	JPanel panel;
 	RegDoctorList rdl;
@@ -199,57 +202,48 @@ public class AddDoctor extends JFrame implements MouseListener,ActionListener{
 		}
 	}
 	
-	public void actionPerformed(ActionEvent ae){
-		String command = ae.getActionCommand();
-		if (ae.getSource() == backBtn){
-			Login lgn = new Login();
-			lgn.setVisible(true);
-			this.setVisible(false);	
-		   }
-	
-		else if(ae.getSource() == add){
-			String id = idField.getText();
-			String name = userTF.getText();
-			String mobileNo = nmTF.getText();
-			
-			
-			String department ="", gender = "";
-			department = dept.getSelectedItem().toString();
-			
-			
-			
-			if(r1.isSelected()){ gender = "Male"; }
-			else if(r2.isSelected()){ gender = "Female"; }
-			else if(r3.isSelected()){ gender = "Other"; }
-			
-			String joiningDate = dateTF.getText();
-			String bmdcReg = bmdcTF.getText();
-			
-			String password = passTF.getText();
-			String confirmPass = conpTF.getText();
-			
-			
-			
-			if(!id.isEmpty() && !name.isEmpty() && !password.isEmpty() && !confirmPass.isEmpty() && !gender.isEmpty() && !department.isEmpty() && !bmdcReg.isEmpty()){
-				if(password.equals(confirmPass)){
-					Doctor d = new Doctor(id, name, gender, mobileNo, department, joiningDate, bmdcReg, password);
-					
-					//RegDoctorList rdl = new RegDoctorList(); 
-					rdl.addDoctor(d);
-					//nextSlN++;
-					DrLogin dlg = new DrLogin(rdl);
-					dlg.setVisible(true);
-					this.setVisible(false);
-					//this.slN = nextSlN++;
-					//this.nextSlN = nextSlN;	
-				}else{
-					JOptionPane.showMessageDialog(this, "Password doesn't match!");
-				}
-			}	else
-				JOptionPane.showMessageDialog(this, "You can not leave any field empty!");
-				
-		}
-		
-	}	
+	public void actionPerformed(ActionEvent ae) {
+    if (ae.getSource() == backBtn) {
+        Login lgn = new Login();
+        lgn.setVisible(true);
+        this.setVisible(false);    
+    } else if (ae.getSource() == add) {
+        String id = idField.getText();
+        String name = userTF.getText();
+        String mobileNo = nmTF.getText();
+
+        String department = "", gender = "";
+        department = dept.getSelectedItem().toString();
+
+        if (r1.isSelected()) { gender = "Male"; }
+        else if (r2.isSelected()) { gender = "Female"; }
+        else if (r3.isSelected()) { gender = "Other"; }
+
+        String joiningDate = dateTF.getText();
+        String bmdcReg = bmdcTF.getText();
+        String password = passTF.getText();
+        String confirmPass = conpTF.getText();
+
+        if (!id.isEmpty() && !name.isEmpty() && !password.isEmpty() && !confirmPass.isEmpty() && 
+            !gender.isEmpty() && !department.isEmpty() && !bmdcReg.isEmpty()) {
+            if (password.equals(confirmPass)) {
+                Doctor d = new Doctor(id, name, gender, mobileNo, department, joiningDate, bmdcReg, password);
+
+                // RegDoctorList rdl = new RegDoctorList(); 
+                rdl.addDoctor(d);
+                // nextSlN++;
+                DrLogin dlg = new DrLogin(rdl);
+                dlg.setVisible(true);
+                this.setVisible(false);
+                // this.slN = nextSlN++;
+                // this.nextSlN = nextSlN;    
+            } else {
+                JOptionPane.showMessageDialog(this, "Password doesn't match!");
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, "You can not leave any field empty!");
+        }
+    }
+}	
 
 }
