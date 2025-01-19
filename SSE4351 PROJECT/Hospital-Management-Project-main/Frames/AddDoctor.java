@@ -15,7 +15,9 @@ public class AddDoctor extends JFrame implements MouseListener,ActionListener{
 	JPasswordField passTF,conpTF;
 	JButton add, backBtn;
 	ButtonGroup bg1;
-	JRadioButton r1,r2,r3;
+	JRadioButton r1;
+	JRadioButton r2;
+	JRadioButton r3;
 	JComboBox dept;
 	Color color1,color2;
 	Font font1;
@@ -207,7 +209,7 @@ public class AddDoctor extends JFrame implements MouseListener,ActionListener{
         Login lgn = new Login();
         lgn.setVisible(true);
         this.setVisible(false);    
-    } else if (ae.getSource() == add) {
+    } else if (ae.getSource().equals(add)) {
         String id = idField.getText();
         String name = userTF.getText();
         String mobileNo = nmTF.getText();
